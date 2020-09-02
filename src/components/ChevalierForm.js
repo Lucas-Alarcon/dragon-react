@@ -1,17 +1,16 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { chevalierName, addChevalier, logAdd } from '../actions/actions-types';
+import { chevalierName, addChevalier } from '../actions/actions-types';
 
 const ChevalierForm = () => {
 
-  const { chevaliers, chevalier, message } = useSelector(state => state.chevalier);
+  const { chevalier, message } = useSelector(state => state.chevalier);
   const dispatch = useDispatch()
 
   const handleSubmit = e => {
     e.preventDefault();
 
     dispatch(addChevalier(chevalier))
-    dispatch(logAdd({array: chevaliers, value: chevalier}))
   }
 
   return (

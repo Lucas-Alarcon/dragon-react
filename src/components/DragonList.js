@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { deleteDragon, inversionDragon, logDelete } from '../actions/actions-types';
+import { deleteDragon, inversionDragon } from '../actions/actions-types';
 
 const DragonList = () => {
 
@@ -9,7 +9,6 @@ const DragonList = () => {
 
     const handleDelete = (dragon) => {
         dispatch(deleteDragon(dragon))
-        dispatch(logDelete(dragon))
     }
 
     return (

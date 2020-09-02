@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { deleteChevalier, inversionChevalier, logDelete } from '../actions/actions-types';
+import { deleteChevalier, inversionChevalier } from '../actions/actions-types';
 
 const ChevalierList = () => {
 
@@ -9,7 +9,6 @@ const ChevalierList = () => {
 
     const handleDelete = (chevalier) => {
         dispatch(deleteChevalier(chevalier))
-        dispatch(logDelete(chevalier))
     }
 
     return (

@@ -1,17 +1,16 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { dragonName, addDragon, logAdd } from '../actions/actions-types';
+import { dragonName, addDragon } from '../actions/actions-types';
 
 const DragonForm = () => {
 
-  const { dragons, dragon, message } = useSelector(state => state.dragon);
+  const { dragon, message } = useSelector(state => state.dragon);
   const dispatch = useDispatch()
 
   const handleSubmit = e => {
     e.preventDefault();
 
     dispatch(addDragon(dragon))
-    dispatch(logAdd({array: dragons, value: dragon}))
   }
 
   return (

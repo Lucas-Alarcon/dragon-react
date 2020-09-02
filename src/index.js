@@ -7,16 +7,9 @@ import * as serviceWorker from './serviceWorker';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import reducer from './reducers/index';
+import Log from './middleware/Log'
 
-const middleware = store => next => action => {
-  console.log("dispatwh", action)
-
-  const returnAction = next(action)
-
-  console.log("next state", store.getState())
-}
-
-const store = createStore(reducer, applyMiddleware(middleware));
+const store = createStore(reducer, applyMiddleware(Log));
 
 ReactDOM.render(
   <React.StrictMode>

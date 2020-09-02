@@ -7,8 +7,6 @@ let stateInit = {
 
 const reducer = (state = stateInit, action = {}) => {
 
-    // const { dragons, dragon } = action.payload;
-
     switch (action.type) {
 
         case LOG_ADD:

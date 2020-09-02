@@ -1,0 +1,13 @@
+export const DRAGON_NAME = 'DRAGON_NAME';
+export const ADD_DRAGON = 'ADD_DRAGON';
+export const DELETE_DRAGON = 'DELETE_DRAGON';
+export const INVERSION_DRAGON = 'INVERSION_DRAGON';
+
+export const CHEVALIER_NAME = 'CHEVALIER_NAME';
+export const ADD_CHEVALIER = 'ADD_CHEVALIER';
+export const DELETE_CHEVALIER = 'DELETE_CHEVALIER';
+export const INVERSION_CHEVALIER = 'INVERSION_CHEVALIER';
+
+export const LOG_ADD = 'LOG_ADD';
+export const LOG_DELETE = 'LOG_DELETE';
+export const RESET_LOG = 'RESET_LOG';
